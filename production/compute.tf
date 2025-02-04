@@ -7,7 +7,7 @@ module "prod_compute_1" {
   }
   aws_region      = var.aws_region
   instance_type   = "t2.nano"
-  key_name        = "Latest"
+  key_name        = "SecOps-Key"
   public_subnets  = module.prod_vpc_1.public_subnets_id
   private_subnets = module.prod_vpc_1.private_subnets_id
   sg_id           = module.prod_sg_1.sg_id

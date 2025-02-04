@@ -11,7 +11,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "saikiranbucket94"
+    bucket = "sais3bucket236"
     key    = "dev-modules.tfstate"
     region = "us-east-1"
   }

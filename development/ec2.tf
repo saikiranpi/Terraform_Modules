@@ -7,7 +7,7 @@ module "dev_compute_1" {
   }
   aws_region           = var.aws_region
   instance_type        = "t2.nano"
-  key_name             = "Latest"
+  key_name             = "SecOps-Key"
   iam_instance_profile = module.dev_iam_1.instprofile
   public_subnets       = module.dev_vpc_1.public_subnets_id
   private_subnets      = module.dev_vpc_1.private_subnets_id
